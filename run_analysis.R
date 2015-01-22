@@ -57,7 +57,7 @@ updateLabels <- function(data)
   data <- subset(data, 
                  select=c(Subject, 
                           ActivityName, 
-                          tBodyAcc.mean.X:fBodyBodyGyroJerkMag.std))
+                          order(names(data)[1:(ncol(data) - 2)])))
   return(data)
 }
 
