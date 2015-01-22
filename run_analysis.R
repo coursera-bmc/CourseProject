@@ -7,7 +7,7 @@
 ## Average of mean or Average of standard deviation filling out the rest of 
 ## the columns on the observation.
 
-run_analysis <- function()
+run_analysis <- function(returnType = FALSE)
 {
   #Split into functions for ease of coding and unit testing
   
@@ -27,7 +27,7 @@ run_analysis <- function()
   data <- createTidyTable(data)
   
   #Write the data to a file
-  write.table(data, "tidy_experiment_data.txt", row.names=FALSE)
+  if(returnType)  write.table(data, "tidy_experiment_data.txt", row.names=FALSE)
   return(data)
 }
 
