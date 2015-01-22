@@ -1,9 +1,10 @@
-==================================================================
-Tidied Human Activity Recognition Using Smartphones Dataset
-==================================================================
+
+##Tidied Human Activity Recognition Using Smartphones Dataset
+
 Version 1.0
 
 Original Data collection by:
+
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
@@ -19,8 +20,7 @@ Course Project
 
 https://github.com/coursera-bmc/courseproject
 
-INITIAL DATA COLLECTION (explanation from initial study)
-==================================================================
+##INITIAL DATA COLLECTION (explanation from initial study)
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -29,8 +29,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 For each record it is provided: 
 * A 68-feature vector with subject ID, Activity Name, time and frequency domain variables.  Each of these variables is the mean of all trials conducted with a given Subject - Activity combination.
 
-DATA TIDYING PROCESS AND LOADING OF TIDY DATA TABLE
-==================================================================
+##DATA TIDYING PROCESS AND LOADING OF TIDY DATA TABLE
 
 To reproduce the data tidying process, the zip file 'getdata_projectfiles_UCI HAR Dataset.zip' and R script 'run_analysis.R' may be downloaded from github.com/coursera-bmc/courseproject and placed in the current working directory for R.  Files can be placed elsewhere, but directory callouts in the R script must be updated to point to the correct location.
 
@@ -50,10 +49,10 @@ An already tidied data table is available as 'tidy_experiment_data.txt'.
 3. Execute function run_analysis(returnType).  This will return the tidy data set in one of two ways:
   * If executed as run_analysis(TRUE), the data will be printed to './tidy_experiment_data.txt' as well as returned as output from the function.
   * If no arguments are given or run_analysis(FALSE) is executed, no file will be written.
-4. TO LOAD the file 'tidy_experiment_data.txt' into R, use read.table('tidy_experiment_data.txt', header=TRUE).
+4. *TO LOAD* the file 'tidy_experiment_data.txt' into R, use read.table('tidy_experiment_data.txt', header=TRUE).
 
-COLUMN INFORMATION
-==================================================================
+##COLUMN INFORMATION
+
 All columns are the mean of measurements for each grouping of Subject ID - Activity Name sets.  That is, each column should be understood as "The Mean of <column_name>".
 
 Each column has a specific formula for reading and understanding the name:
