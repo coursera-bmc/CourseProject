@@ -34,10 +34,15 @@ For each record it is provided:
 To reproduce the data tidying process, the zip file 'getdata_projectfiles_UCI HAR Dataset.zip' and R script 'run_analysis.R' may be downloaded from github.com/coursera-bmc/courseproject and placed in the current working directory for R.  Files can be placed elsewhere, but directory callouts in the R script must be updated to point to the correct location.
 
 'run_analysis.R' is commented for a more in-depth look at methodology.
+
 1. Data loaded from 'X_[test,train].txt', 'Y_[test,train].txt', and 'subject_[test,train].txt' and combined into a single table encompassing all of the data.  Column headers read from 'features.txt' and attached to the data table.
+
 2. Per the assignment, only those columns pertaining to mean and standard deviation were retained.  NOTE: meanFreq columns are dropped.  Mean Frequency is a weighted average, which is different from a regular average.
+
 3. Labels are updated and columns are sorted into a readable format.
+
 4. Average is taken of each individual column of Subject:Activity readings and stored into new table.  This table is sorted by Subject and then ActivityName
+
 5. Data frame printed to 'tidy_experiment_data.txt'
 
 An already tidied data table is available as 'tidy_experiment_data.txt'.
